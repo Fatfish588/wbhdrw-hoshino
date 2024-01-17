@@ -57,12 +57,12 @@ def create_all_messages_data(msg_list, ev: CQEvent):
 async def I_dont_know_how_to_type_japanese(bot, ev: CQEvent):
     images = regex_image.findall(ev.raw_message)
     if len(images) < 1:
-        bot.send(ev, "我不会打日文：没有收到图片呢，请和文字一起发送", at_sender=False)
+        await bot.send(ev, "我不会打日文：没有收到图片呢，请和文字一起发送", at_sender=False)
     elif len(images) > 1:
-        bot.send(ev, "我不会打日文：目前只能接受一张图呢", at_sender=False)
+        await bot.send(ev, "我不会打日文：目前只能接受一张图呢", at_sender=False)
     else:
         image = io.imread(images[0])
-        bot.send(ev, "正在识别图中日文，请稍后", at_sender=False)
+        await bot.send(ev, "正在识别图中日文，请稍后", at_sender=False)
         reader = easyocr.Reader(['ja'])
         result = reader.readtext(image)
         send_messages_list = create_all_messages_data(result, ev)
