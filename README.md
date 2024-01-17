@@ -14,10 +14,10 @@
 
 本插件使用了easyocr的日语专用模型，识别日文的精度较于友商们自带的混合语言识别模型有所进步。发送心中的呐喊：我不会打日文➕需要识别的图片，插件会在本地运行日语OCR识别，并将所有结果用合并转发的方式发送，无需联网无需付费无需担心xp泄漏。
 #  效果
+![e47b582c8ef4bc7c94b6a0b54cbb390d](https://github.com/Fatfish588/wbhdrw-hoshino/assets/59791439/a426d290-0e58-4941-b66d-729f5bb76a3a)
+![461509b01efdef5e7e1a293c3b4f2ee7](https://github.com/Fatfish588/wbhdrw-hoshino/assets/59791439/a34513c9-6288-4b24-8736-7341653461c4)
 
 #  部署方式
-
-
 
 1.下载或git clone本插件：    
 
