@@ -49,6 +49,13 @@ python load_model.py
 5.重启 HoshinoBot。    
 #  指令
   发送【我不会打日文】+ 需要识别的图片，在上方效果中有演示。  
+#  常见问题
+ Q:报错AttributeError: partially initialized module 'cv2' has no attribute '_registerMatType' (most likely due to a circular import)  
+ A:大概率是python解释器版本问题导致依赖下载的是不正确版本，可尝试将依赖中的opencv-python-headless默认版本修改为opencv-python-headless<4.3  
+
+
+
+
 # 碎碎念
 1. 因为整个插件的创建目的就是去识别本子名画师名，所以就没考虑用在线的云识别，并且模型是纯日文模型，导致会把中文什么的提取的很奇怪，不用在意别的内容，找到所需要的日文就可以了。   
 2. easyocr支持GPU运行，速度会更快。  
